@@ -1,20 +1,14 @@
-package ale.learning.demo.presentation.rest.player.dto;
+package ale.learning.demo.application.player.domain;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-// import java.util.List;
 
-import ale.learning.demo.application.player.domain.PlayerAccountStatusEnum;
-import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
 @Builder
-public class PlayerResponseDto {
+public class Player {
     private Long playerId;
     private String fullName;
     private String nickName;
