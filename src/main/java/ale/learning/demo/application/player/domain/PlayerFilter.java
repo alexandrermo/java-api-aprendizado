@@ -1,11 +1,17 @@
 package ale.learning.demo.application.player.domain;
 
 import ale.learning.demo.presentation.shared.domain.Pageable;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
+import lombok.experimental.SuperBuilder;
 
-@Setter
-@Getter
+@SuperBuilder
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
+@EqualsAndHashCode(callSuper = true)
 public class PlayerFilter extends Pageable {
     private Long playerId;
     private String countryCode;
