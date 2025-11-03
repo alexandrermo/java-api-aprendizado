@@ -1,10 +1,9 @@
 package ale.learning.demo.application.player.adapter;
 
-import java.util.List;
-
 import ale.learning.demo.application.player.domain.Player;
 import ale.learning.demo.application.player.domain.PlayerFilter;
+import ale.learning.demo.presentation.shared.domain.Page;
 
 public interface PlayerHttpAdapter {
-    List<Player> getPlayers(PlayerFilter playerFilter);
+    Page<Player> getPlayers(PlayerFilter playerFilter);
 }
