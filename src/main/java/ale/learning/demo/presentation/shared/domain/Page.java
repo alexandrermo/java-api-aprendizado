@@ -1,4 +1,4 @@
-package ale.learning.demo.presentation.shared;
+package ale.learning.demo.presentation.shared.domain;
 
 import java.util.List;
 
